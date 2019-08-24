@@ -1,3 +1,3 @@
-class Gram < ActiveRecord::Base
+class Gram < ApplicationRecord
 	validates :message, presence: true
 end

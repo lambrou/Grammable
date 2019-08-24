@@ -74,3 +74,6 @@ group :development, :test do
 end
 
 gem 'simple_form'
+
+# User authentication
+gem 'devise'
