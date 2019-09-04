@@ -78,3 +78,6 @@ gem 'simple_form'
 
 # User authentication
 gem 'devise'
+gem 'carrierwave', '~> 2.0'
+gem "figaro"
+gem "fog-aws"
