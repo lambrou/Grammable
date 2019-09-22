@@ -1,24 +1,14 @@
-# README
+# Grammable
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Grammable is an Instagram clone built completely from red green refactor TDD cycles using RSpec. Uses CarrierWave and fog for image uploads. All images are uploaded to AWS.
 
-Things you may want to cover:
+# Features
+User accounts
 
-* Ruby version
+Comments
 
-* System dependencies
+CRUD for posts.
 
-* Configuration
+## License
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
