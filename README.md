@@ -13,6 +13,3 @@ CRUD for posts.
 
 https://lambrou-grammable.herokuapp.com/
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
