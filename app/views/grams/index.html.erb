@@ -2,10 +2,12 @@
   <% @grams.each do |gram| %>
   <div class="card">
     <div class="handle"><%= gram.user.email %></div>
-    <%= image_tag gram.picture.url, class: 'img-fluid' %>
-    <p>
+    <div class="pop" style="text-align: center;">
+      <%= image_tag gram.picture.url(:thumb), class: 'img-thumbnail mx-auto' %>
+    <p class="cap">
       <%= gram.message %>
     </p>
+    </div>
 	<div class="gram-actions float-right">
 		<% if current_user && current_user == gram.user %>
 			<%= link_to 'Edit', edit_gram_path(gram) %>
@@ -32,5 +34,19 @@
 		<% end %>
 	</div>
   </div>
+  <br />
   <% end %>
+</div>
+
+<!-- Creates the bootstrap modal where the image will appear -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="" class="imagepreview" style="width: 100%;" >
+        <p class="cappreview" style="text-align: center;"></p>
+      </div>
+    </div>
+  </div>
 </div>

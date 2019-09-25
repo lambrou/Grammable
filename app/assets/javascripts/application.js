@@ -17,3 +17,12 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+
+
+$(function() {
+		$('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('.cappreview').text($(this).find('p').text());
+			$('#imagemodal').modal('show');   
+		});		
+});
